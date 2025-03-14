@@ -80,9 +80,30 @@
             border-bottom: none;
         }
         .card ul li::before {
-            content: "✅";
+            content: "⭐";
             margin-right: 10px;
             color: #4CAF50;
+        }
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .filter-buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .filter-buttons button:hover {
+            background-color: #45a049;
+        }
+        .filter-buttons button.active {
+            background-color: #333;
         }
         footer {
             background-color: #333;
@@ -111,10 +132,17 @@
 </nav>
 
 <div class="container">
-    <!-- 配套 Packages -->
-    <div class="card">
-        <h2>配套 Packages</h2>
-        <h3>配套 A：单一 APP 配套 – 仅需 RM49/月</h3>
+    <!-- 筛选按钮 -->
+    <div class="filter-buttons">
+        <button class="active" data-filter="all">全部配套</button>
+        <button data-filter="app">单一 APP 配套</button>
+        <button data-filter="device">设备配套</button>
+        <button data-filter="device-plus">设备 + 6 个月配套</button>
+    </div>
+
+    <!-- 配套 A：单一 APP 配套 -->
+    <div class="card" data-category="app">
+        <h2>配套 A：单一 APP 配套 – 仅需 RM49/月</h2>
         <ul>
             <li><strong>适合对象：</strong>初创或小型企业，希望以最低成本获取专业的 POS 系统。</li>
             <li><strong>包含内容：</strong>
@@ -126,8 +154,11 @@
                 </ul>
             </li>
         </ul>
+    </div>
 
-        <h3>配套 B：设备配套 – 仅需 RM999（赠送 60天软件免费使用）</h3>
+    <!-- 配套 B：设备配套 -->
+    <div class="card" data-category="device">
+        <h2>配套 B：设备配套 – 仅需 RM999（赠送 60天软件免费使用）</h2>
         <ul>
             <li><strong>适合对象：</strong>中小型以及微型生意，例如流动小贩，商店，巴刹或摊贩等，不需要繁琐设备，低负担。</li>
             <li><strong>包含内容：</strong>
@@ -141,8 +172,11 @@
                 </ul>
             </li>
         </ul>
+    </div>
 
-        <h3>配套 C：设备 + 6 个月配套 – 仅需 RM1388</h3>
+    <!-- 配套 C：设备 + 6 个月配套 -->
+    <div class="card" data-category="device-plus">
+        <h2>配套 C：设备 + 6 个月配套 – 仅需 RM1388</h2>
         <ul>
             <li><strong>适合对象：</strong>寻求长远解决方案，节省更多的企业。</li>
             <li><strong>包含内容：</strong>
@@ -162,6 +196,33 @@
 <footer>
     <p>&copy; 2023 UK Software & Solution. 保留所有权利。</p>
 </footer>
+
+<script>
+    // 筛选功能
+    const filterButtons = document.querySelectorAll('.filter-buttons button');
+    const cards = document.querySelectorAll('.card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // 移除所有按钮的 active 状态
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // 为当前按钮添加 active 状态
+            button.classList.add('active');
+
+            const filter = button.getAttribute('data-filter');
+
+            // 显示或隐藏卡片
+            cards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filter === 'all' || category === filter) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
