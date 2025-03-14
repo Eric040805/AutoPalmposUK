@@ -6,98 +6,97 @@
     <title>UK Software & Solution - 首页</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f0f2f5;
             color: #333;
         }
         header {
-            background-image: url('pic1.png'); /* 使用相对路径引用背景图片 */
+            background-image: url('pic1.png');
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 60px 0;
+            padding: 80px 20px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         header h1 {
-            font-size: 3rem;
-            margin: 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
         }
         header p {
-            font-size: 1.2rem;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: rgba(51, 51, 51, 0.9);
-            padding: 10px 0;
+            background-color: #2c3e50;
+            padding: 15px 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         nav a {
             color: white;
-            padding: 14px 20px;
+            padding: 12px 20px;
             text-decoration: none;
-            text-align: center;
-            transition: background 0.3s ease, transform 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
         }
         nav a:hover {
-            background-color: #575757;
-            transform: translateY(-3px);
+            background-color: #34495e;
+            border-radius: 5px;
         }
         .container {
-            padding: 20px;
+            padding: 30px;
             max-width: 1200px;
             margin: 0 auto;
         }
         .card {
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
+            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
         }
         .card h2 {
-            color: #4CAF50;
+            color: #27ae60;
+            margin-bottom: 15px;
         }
         .card ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
         .card ul li {
             padding: 10px 0;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #ddd;
         }
         .card ul li:last-child {
             border-bottom: none;
         }
         .card ul li::before {
-            content: "✔";
+            content: "\2713";
             margin-right: 10px;
-            color: #4CAF50;
+            color: #27ae60;
         }
         footer {
-            background-color: #333;
+            background-color: #2c3e50;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: relative;
-            width: 100%;
-            bottom: 0;
+            padding: 15px 0;
+            margin-top: 30px;
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
         }
         .language-container {
             display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 20px;
         }
         .language-container div {
             flex: 1;
@@ -119,7 +118,6 @@
 </nav>
 
 <div class="container">
-    <!-- 为什么选择 PalmPOS -->
     <div class="card">
         <h2>为什么选择 PalmPOS？ | Mengapa Memilih PalmPOS?</h2>
         <div class="language-container">
@@ -142,78 +140,16 @@
         </div>
     </div>
 
-    <!-- PalmPOS 产品与软件总结 -->
-    <div class="card">
-        <h2>PalmPOS 产品与软件总结 | Ringkasan Produk & Perisian PalmPOS</h2>
-        <div class="language-container">
-            <div>
-                <ul>
-                    <li><strong>简单易用，快速上手：</strong>预装 500+ 业务模板，简化设置流程，适合不擅长电子设备的用户。界面简洁直观，轻松上手，减少培训时间。</li>
-                    <li><strong>高效自动化，提升运营效率：</strong>自动捕捉线上支付订单，自动处理电子发票，减少人工流程。自动记录销售额并同步至 AutoCount Cloud Accounting，实现高效财务管理。</li>
-                    <li><strong>灵活便捷，适配多场景：</strong>支持 Android 设备，并可额外配置打印机，适合各类商铺、夜市、商场等场景。设备轻巧，便于移动和携带，满足各种业务需求。</li>
-                    <li><strong>云端数据同步，保障数据安全：</strong>所有数据自动同步至云端系统，避免数据丢失，随时随地访问和管理业务数据。提高数据安全性，减少人工错误和运营风险。</li>
-                    <li><strong>多支付方式，满足客户多样需求：</strong>已支持 Boost 电子钱包，未来将持续扩展更多主流支付方式。提供多样支付选择，优化客户消费体验。</li>
-                    <li><strong>强大售后支持，保障客户无忧：</strong>提供完整教学视频、操作指南以及技术支持，确保客户的每一步都无忧。</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><strong>Mudah Digunakan, Cepat Dikuasai：</strong>Pratetap 500+ templat perniagaan, memudahkan proses penyediaan, sesuai untuk pengguna yang tidak mahir dengan peranti elektronik. Antara muka yang ringkas dan intuitif, mudah digunakan, mengurangkan masa latihan.</li>
-                    <li><strong>Automasi Cekap, Meningkatkan Kecekapan Operasi：</strong>Menangkap pesanan pembayaran dalam talian secara automatik, memproses invois elektronik secara automatik, mengurangkan proses manual. Menyegerakkan rekod jualan ke AutoCount Cloud Accounting, mencapai pengurusan kewangan yang cekap.</li>
-                    <li><strong>Fleksibel dan Mudah, Sesuai untuk Pelbagai Senario：</strong>Menyokong peranti Android, dan boleh dikonfigurasikan dengan pencetak tambahan, sesuai untuk pelbagai jenis kedai, pasar malam, pusat membeli-belah, dan lain-lain. Peranti yang ringan, mudah dibawa, memenuhi keperluan perniagaan.</li>
-                    <li><strong>Penyegerakan Data Awan, Menjamin Keselamatan Data：</strong>Semua data disegerakkan secara automatik ke sistem awan, mengelakkan kehilangan data, mengakses dan mengurus data perniagaan di mana-mana sahaja. Meningkatkan keselamatan data, mengurangkan kesilapan manual dan risiko operasi.</li>
-                    <li><strong>Pelbagai Cara Pembayaran, Memenuhi Keperluan Pelanggan：</strong>Telah menyokong dompet elektronik Boost, dan akan terus mengembangkan lebih banyak cara pembayaran utama. Menyediakan pelbagai pilihan pembayaran, mengoptimumkan pengalaman pelanggan.</li>
-                    <li><strong>Sokongan Selepas Jualan yang Kuat, Memastikan Kebebasan Pelanggan：</strong>Menyediakan video tutorial, panduan operasi, dan sokongan teknikal, memastikan setiap langkah pelanggan bebas masalah.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Trade-In 服务 -->
     <div class="card">
         <h2>售后保值 Trade-In 服务 | Perkhidmatan Trade-In Nilai Selepas Jualan</h2>
         <div class="language-container">
             <div>
                 <p><strong>安心购买，保障价值！</strong></p>
                 <p>如果您在购买并使用 PalmPOS 设备后，发现设备不符合需求，或想更换其他设备，我们提供 Trade-In 换购服务，帮助您保障设备价值。</p>
-                <ul>
-                    <li><strong>Trade-In 条件：</strong>
-                        <ul>
-                            <li>设备需在规定时间内（建议 6-12 个月）提交换购申请。</li>
-                            <li>设备需保持良好状态，经过检测确认。</li>
-                        </ul>
-                    </li>
-                    <li><strong>Trade-In 优势：</strong>
-                        <ul>
-                            <li>旧设备可抵扣新设备购买金额，让升级更轻松。</li>
-                            <li>保障客户的投资价值，减少损失。</li>
-                            <li>专业客服协助换购流程，确保顺利无忧。</li>
-                            <li>免费回收旧设备，节省运输烦恼。</li>
-                        </ul>
-                    </li>
-                </ul>
-                <p><strong>特别优惠：</strong>通过 Trade-In 换购新设备，客户可享受额外折扣或免费订阅服务延长！</p>
             </div>
             <div>
                 <p><strong>Beli dengan Tenang, Jamin Nilai!</strong></p>
                 <p>Jika anda mendapati peranti PalmPOS tidak memenuhi keperluan selepas pembelian dan penggunaan, atau ingin menukar ke peranti lain, kami menyediakan perkhidmatan Trade-In untuk membantu anda memastikan nilai peranti.</p>
-                <ul>
-                    <li><strong>Syarat Trade-In：</strong>
-                        <ul>
-                            <li>Peranti perlu memohon pertukaran dalam tempoh yang ditetapkan (disyorkan 6-12 bulan).</li>
-                            <li>Peranti perlu berada dalam keadaan baik, disahkan melalui pemeriksaan.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Kelebihan Trade-In：</strong>
-                        <ul>
-                            <li>Peranti lama boleh ditolak daripada harga pembelian peranti baru, memudahkan peningkatan.</li>
-                            <li>Menjamin nilai pelaburan pelanggan, mengurangkan kerugian.</li>
-                            <li>Perkhidmatan pelanggan profesional membantu proses pertukaran, memastikan kelancaran.</li>
-                            <li>Percuma pengambilan peranti lama, menjimatkan masalah penghantaran.</li>
-                        </ul>
-                    </li>
-                </ul>
-                <p><strong>Promosi Khas：</strong>Melalui Trade-In, pelanggan boleh menikmati diskaun tambahan atau lanjutan perkhidmatan langganan percuma!</p>
             </div>
         </div>
     </div>
