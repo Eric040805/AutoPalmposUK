@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Software & Solution - 产品详情</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-image: url('pic1.png'); /* 使用相对路径引用背景图片 */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #575757;
+            transform: translateY(-3px);
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .product-image {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>UK Software & Solution</h1>
+    <p>您的商业解决方案专家</p>
+</header>
+
+<nav>
+    <a href="index.html">首页</a>
+    <a href="product-details.html">产品详情</a>
+    <a href="contact.html">联系我们</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h2>产品详情</h2>
+        <p>了解更多关于Autocount OneSales PalmPos的详细信息：</p>
+        <ul>
+            <li><strong>版本：</strong>标准版、专业版</li>
+            <li><strong>兼容性：</strong>Windows, macOS</li>
+            <li><strong>支持：</strong>24/7 客户支持</li>
+        </ul>
+        <img src="product-image.jpg" alt="Autocount OneSales PalmPos" class="product-image"> <!-- 替换为您的产品图片 -->
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 UK Software & Solution. 保留所有权利。</p>
+</footer>
+
+</body>
+</html>
