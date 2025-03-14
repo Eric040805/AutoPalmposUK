@@ -13,7 +13,7 @@
             color: #333;
         }
         header {
-            background-image: url('pic1.png'); /* 使用相对路径引用背景图片 */
+            background-image: url('pic1.png');
             background-size: cover;
             background-position: center;
             color: white;
@@ -84,7 +84,7 @@
             border-bottom: none;
         }
         .card ul li::before {
-            content: "✔";
+            content: "\2714";
             margin-right: 10px;
             color: #4CAF50;
         }
@@ -125,32 +125,6 @@
         .download-button:hover {
             background-color: #45a049;
         }
-
-        /* 响应式设计 */
-        @media (min-width: 768px) {
-            header h1 {
-                font-size: 3rem;
-            }
-            header p {
-                font-size: 1.5rem;
-            }
-            nav a {
-                padding: 14px 20px;
-                font-size: 1rem;
-            }
-            .language-container {
-                flex-direction: row;
-            }
-            .card h2 {
-                font-size: 2rem;
-            }
-            .card ul li {
-                font-size: 1.1rem;
-            }
-            .download-button {
-                font-size: 1.1rem;
-            }
-        }
     </style>
 </head>
 <body>
@@ -168,107 +142,7 @@
 </nav>
 
 <div class="container">
-    <!-- 产品简介 -->
-    <div class="card">
-        <h2>什么是 PalmPOS？ | Apa itu PalmPOS?</h2>
-        <div class="language-container">
-            <div>
-                <p>PalmPOS 是一款专为零售和餐饮业设计的移动销售点（POS）系统。它结合了强大的功能和简洁的用户界面，帮助企业简化销售流程、提高效率，并提供详细的销售报告。</p>
-            </div>
-            <div>
-                <p>PalmPOS adalah sistem titik jualan (POS) mudah alih yang direka khas untuk industri runcit dan makanan. Ia menggabungkan fungsi yang kuat dan antara muka pengguna yang ringkas, membantu syarikat memudahkan proses jualan, meningkatkan kecekapan, dan menyediakan laporan jualan terperinci.</p>
-            </div>
-        </div>
-        <img src="palmpos.png" alt="PalmPOS 设备 | Peranti PalmPOS" class="product-image">
-        <h2>PalmPOS软件 | Perisian PalmPOS</h2>
-        <img src="palmpos-image-1-1536x1280.png" alt="PalmPOS 设备 | Peranti PalmPOS" class="product-image">
-    </div>
-
-    <!-- OneSales PalmPOS 简介 -->
-    <div class="card">
-        <h2>OneSales PalmPOS – 您完整的移动 POS 解决方案 | OneSales PalmPOS – Penyelesaian POS Mudah Alih Anda</h2>
-        <div class="language-container">
-            <div>
-                <p>利用专为小型和微型企业设计的移动销售点解决方案 OneSales PalmPOS 简化您的零售业务。借助我们的创新功能，轻松开具电子发票现成收据并简化付款，以提高客户便利性。</p>
-            </div>
-            <div>
-                <p>Permudah operasi runcit anda dengan OneSales PalmPOS, penyelesaian titik jualan mudah alih yang direka khas untuk perniagaan kecil dan mikro. Dengan ciri inovatif kami, mudah mengeluarkan invois elektronik, resit siap, dan memudahkan pembayaran untuk meningkatkan kemudahan pelanggan.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- 主要特点 -->
-    <div class="card">
-        <h2>主要功能 | Fungsi Utama</h2>
-        <div class="language-container">
-            <div>
-                <ul>
-                    <li><strong>LHDN 电子发票变得方便：</strong>通过二维码轻松请求电子发票。</li>
-                    <li><strong>超过 500 个商业产品模板：</strong>涵盖各种业务类型和类别，快速启动运营。</li>
-                    <li><strong>支持多种支付方式：</strong>接受不同的电子钱包付款，提供多种付款选择。</li>
-                    <li><strong>付款语音通知：</strong>数字付款成功后接收实时语音通知，确认更快、更轻松。</li>
-                    <li><strong>电子钱包付款的自动销售捕获：</strong>自动记录电子钱包交易，无需手动输入。</li>
-                    <li><strong>灵活的硬件集成：</strong>支持现金抽屉和收据打印机等外围设备。</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><strong>Invois Elektronik LHDN yang Mudah：</strong>Minta invois elektronik dengan mudah melalui kod QR.</li>
-                    <li><strong>Lebih daripada 500 Templat Produk Perniagaan：</strong>Meliputi pelbagai jenis dan kategori perniagaan, mulakan operasi dengan pantas.</li>
-                    <li><strong>Menyokong Pelbagai Cara Pembayaran：</strong>Menerima pembayaran melalui dompet elektronik yang berbeza, menyediakan pelbagai pilihan pembayaran.</li>
-                    <li><strong>Notifikasi Suara Pembayaran：</strong>Terima notifikasi suara masa nyata selepas pembayaran digital, pengesahan lebih pantas dan mudah.</li>
-                    <li><strong>Pengambilan Jualan Automatik untuk Pembayaran Dompet Elektronik：</strong>Rekod transaksi dompet elektronik secara automatik, tiada input manual diperlukan.</li>
-                    <li><strong>Integrasi Perkakasan yang Fleksibel：</strong>Menyokong peranti seperti laci tunai dan pencetak resit.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- 适用场景 -->
-    <div class="card">
-        <h2>适用场景 | Senario Penggunaan</h2>
-        <div class="language-container">
-            <div>
-                <ul>
-                    <li><strong>零售商店：</strong>适用于各类零售商店，快速处理销售和库存。</li>
-                    <li><strong>餐厅：</strong>支持桌位管理、订单打印和厨房通知功能。</li>
-                    <li><strong>餐车：</strong>轻便易携，适合流动摊位。</li>
-                    <li><strong>杂货店：</strong>简化库存管理和销售流程。</li>
-                    <li><strong>美容院：</strong>适用于预约和付款管理。</li>
-                    <li><strong>咖啡馆：</strong>支持快速订单处理和付款。</li>
-                    <li><strong>信息亭：</strong>适用于自助服务和快速结账。</li>
-                    <li><strong>洗车和其他：</strong>简化服务行业的销售和付款流程。</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><strong>Kedai Runcit：</strong>Sesuai untuk pelbagai jenis kedai runcit, memproses jualan dan inventori dengan pantas.</li>
-                    <li><strong>Restoran：</strong>Menyokong pengurusan meja, pencetakan pesanan, dan notifikasi dapur.</li>
-                    <li><strong>Gerai Makanan：</strong>Ringan dan mudah dibawa, sesuai untuk gerai bergerak.</li>
-                    <li><strong>Kedai Runcit：</strong>Memudahkan pengurusan inventori dan proses jualan.</li>
-                    <li><strong>Salon Kecantikan：</strong>Sesuai untuk pengurusan temujanji dan pembayaran.</li>
-                    <li><strong>Kafe：</strong>Menyokong pemprosesan pesanan dan pembayaran yang pantas.</li>
-                    <li><strong>Kiosk：</strong>Sesuai untuk perkhidmatan kendiri dan pembayaran pantas.</li>
-                    <li><strong>Cucian Kereta dan Lain-lain：</strong>Memudahkan proses jualan dan pembayaran dalam industri perkhidmatan.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- 下载链接 -->
-    <div class="card">
-        <h2>立即下载 OneSales PalmPOS | Muat Turun OneSales PalmPOS Sekarang</h2>
-        <div class="language-container">
-            <div>
-                <p>立即下载 OneSales PalmPOS，将您的业务运营提升到新的水平！</p>
-                <a href="https://play.google.com/store/apps/details?id=com.autocountcloud.palmpos&hl=zh&pli=1" class="download-button" target="_blank">下载应用 | Muat Turun Aplikasi</a>
-            </div>
-            <div>
-                <p>Muat turun OneSales PalmPOS sekarang dan bawa operasi perniagaan anda ke tahap yang lebih tinggi!</p>
-                <a href="https://play.google.com/store/apps/details?id=com.autocountcloud.palmpos&hl=zh&pli=1" class="download-button" target="_blank">Muat Turun Aplikasi</a>
-            </div>
-        </div>
-    </div>
+    <!-- 内容 -->
 </div>
 
 <footer>
