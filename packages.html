@@ -107,6 +107,24 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <ul>
+                    <li><strong>Sasaran：</strong>Perniagaan kecil dan sederhana seperti penjaja, kedai, pasar atau peniaga kecil.</li>
+                    <li><strong>Termasuk：</strong>
+                        <ul>
+                            <li>1 peranti PalmPOS Imin Switch 2Pro.</li>
+                            <li>60 hari percuma penggunaan aplikasi PalmPOS.</li>
+                            <li>Video tutorial untuk membantu anda memulakan dengan lancar.</li>
+                            <li>Tiada caj penghantaran.</li>
+                            <li>Percuma 3 gulung kertas cetak.</li>
+                            <li>Harga termasuk SST.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div class="card" data-category="device-plus">
         <h2>配套 C：设备 + 6 个月配套 – 仅需 RM1388 | Pakej C: Pakej Peranti + 6 Bulan – Hanya RM1388</h2>
         <div class="language-container">
@@ -127,15 +145,15 @@
             </div>
             <div>
                 <ul>
-                    <li><strong>Sasaran：</strong>Perniagaan kecil dan sederhana, seperti penjaja, kedai, pasar, atau peniaga kecil。</li>
+                    <li><strong>Sasaran：</strong>Perniagaan yang mencari penyelesaian jangka panjang dan penjimatan lebih besar.</li>
                     <li><strong>Termasuk：</strong>
                         <ul>
-                            <li>1 peranti PalmPOS Imin Switch 2Pro。</li>
-                            <li>60 hari percuma penggunaan aplikasi PalmPOS。</li>
-                            <li>Video tutorial untuk membantu anda memulakan dengan lancar。</li>
-                            <li>Tiada caj penghantaran。</li>
-                            <li>Percuma 3 gulung kertas cetak。</li>
-                            <li>Harga termasuk SST。</li>
+                            <li>1 peranti PalmPOS Imin Switch 2Pro.</li>
+                            <li>6 bulan percuma penggunaan aplikasi PalmPOS.</li>
+                            <li>Video tutorial untuk membantu anda menguasai fungsi dengan cepat.</li>
+                            <li>Perkhidmatan penghantaran percuma, pastikan selamat diterima.</li>
+                            <li>Percuma 3 gulung kertas cetak.</li>
+                            <li>Harga termasuk SST.</li>
                         </ul>
                     </li>
                 </ul>
@@ -147,24 +165,6 @@
 <footer>
     <p>&copy; 2023 UK Software & Solution. 保留所有权利 | Hak Cipta Terpelihara.</p>
 </footer>
-
-<script>
-    const filterButtons = document.querySelectorAll('.filter-buttons button');
-    const cards = document.querySelectorAll('.card');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-
-            const filter = button.getAttribute('data-filter');
-            cards.forEach(card => {
-                const category = card.getAttribute('data-category');
-                card.style.display = (filter === 'all' || category === filter) ? 'block' : 'none';
-            });
-        });
-    });
-</script>
 
 </body>
 </html>
