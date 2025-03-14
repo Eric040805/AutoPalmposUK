@@ -13,7 +13,7 @@
             color: #333;
         }
         header {
-            background-image: url('pic1.png');
+            background-image: url('pic1.png'); /* 使用相对路径引用背景图片 */
             background-size: cover;
             background-position: center;
             color: white;
@@ -65,12 +65,31 @@
             transform: translateY(-5px);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
+        .card h2 {
+            color: #4CAF50;
+        }
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .card ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .card ul li:last-child {
+            border-bottom: none;
+        }
+        .card ul li::before {
+            content: "✅";
+            margin-right: 10px;
+            color: #4CAF50;
+        }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
+            position: relative;
             width: 100%;
             bottom: 0;
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
@@ -91,16 +110,99 @@
 </nav>
 
 <div class="container">
+    <!-- 为什么选择 PalmPOS -->
     <div class="card">
-        <h2>Autocount OneSales PalmPos</h2>
-        <p>Autocount OneSales PalmPos是一款功能强大的销售点（POS）系统，专为零售和餐饮业设计。它可以帮助您简化销售流程，提高效率，并提供详细的销售报告。</p>
-        <p>主要特点：</p>
+        <h2>为什么选择 PalmPOS？</h2>
         <ul>
-            <li>易于使用的界面</li>
-            <li>实时库存管理</li>
-            <li>多种支付方式支持</li>
-            <li>详细的销售报告和分析</li>
+            <li>简单易用，适合各种规模的企业。</li>
+            <li>支持E-invoice，助力企业合规经营。</li>
+            <li>多种支付方式，满足客户多样需求。</li>
+            <li>云端数据同步，方便管理和分析。</li>
         </ul>
+    </div>
+
+    <!-- PalmPOS 产品与软件总结 -->
+    <div class="card">
+        <h2>PalmPOS 产品与软件总结</h2>
+        <ul>
+            <li><strong>简单易用，快速上手：</strong>预装 500+ 业务模板，简化设置流程，适合不擅长电子设备的用户。界面简洁直观，轻松上手，减少培训时间。</li>
+            <li><strong>高效自动化，提升运营效率：</strong>自动捕捉线上支付订单，自动处理电子发票，减少人工流程。自动记录销售额并同步至 AutoCount Cloud Accounting，实现高效财务管理。</li>
+            <li><strong>灵活便捷，适配多场景：</strong>支持 Android 设备，并可额外配置打印机，适合各类商铺、夜市、商场等场景。设备轻巧，便于移动和携带，满足各种业务需求。</li>
+            <li><strong>云端数据同步，保障数据安全：</strong>所有数据自动同步至云端系统，避免数据丢失，随时随地访问和管理业务数据。提高数据安全性，减少人工错误和运营风险。</li>
+            <li><strong>多支付方式，满足客户多样需求：</strong>已支持 Boost 电子钱包，未来将持续扩展更多主流支付方式。提供多样支付选择，优化客户消费体验。</li>
+            <li><strong>强大售后支持，保障客户无忧：</strong>提供完整教学视频、操作指南以及技术支持，确保客户的每一步都无忧。</li>
+        </ul>
+    </div>
+
+    <!-- 配套 Packages -->
+    <div class="card">
+        <h2>配套 Packages</h2>
+        <h3>配套 A：单一 APP 配套 – 仅需 RM49/月</h3>
+        <ul>
+            <li><strong>适合对象：</strong>初创或小型企业，希望以最低成本获取专业的 POS 系统。</li>
+            <li><strong>包含内容：</strong>
+                <ul>
+                    <li>完整的 PalmPOS 软件使用权。</li>
+                    <li>持续的软件更新和技术支持。</li>
+                    <li>教学视频，助您快速上手操作。</li>
+                    <li>马上安装，免费试用。</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>配套 B：设备配套 – 仅需 RM999（赠送 60天软件免费使用）</h3>
+        <ul>
+            <li><strong>适合对象：</strong>中小型以及微型生意，例如流动小贩，商店，巴刹或摊贩等，不需要繁琐设备，低负担。</li>
+            <li><strong>包含内容：</strong>
+                <ul>
+                    <li>1 台专属 PalmPOS 设备 Imin Switch 2Pro。</li>
+                    <li>免费赠送 60 天 PalmPOS 应用使用权。</li>
+                    <li>教学视频，助您无缝上手。</li>
+                    <li>免邮寄费用。</li>
+                    <li>FOC 赠送 3 卷打印纸。</li>
+                    <li>价格已包含 SST。</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>配套 C：设备 + 6 个月配套 – 仅需 RM1388</h3>
+        <ul>
+            <li><strong>适合对象：</strong>寻求长远解决方案，节省更多的企业。</li>
+            <li><strong>包含内容：</strong>
+                <ul>
+                    <li>1 台专属 PalmPOS 设备 Imin Switch 2Pro。</li>
+                    <li>免费赠送 6 个月 PalmPOS 应用使用权。</li>
+                    <li>教学视频指导，助您快速掌握功能。</li>
+                    <li>免费邮寄服务，确保安全送达。</li>
+                    <li>FOC 赠送 3 卷打印纸。</li>
+                    <li>价格已包含 SST。</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Trade-In 服务 -->
+    <div class="card">
+        <h2>售后保值 Trade-In 服务</h2>
+        <p><strong>安心购买，保障价值！</strong></p>
+        <p>如果您在购买并使用 PalmPOS 设备后，发现设备不符合需求，或想更换其他设备，我们提供 Trade-In 换购服务，帮助您保障设备价值。</p>
+        <ul>
+            <li><strong>Trade-In 条件：</strong>
+                <ul>
+                    <li>设备需在规定时间内（建议 6-12 个月）提交换购申请。</li>
+                    <li>设备需保持良好状态，经过检测确认。</li>
+                </ul>
+            </li>
+            <li><strong>Trade-In 优势：</strong>
+                <ul>
+                    <li>旧设备可抵扣新设备购买金额，让升级更轻松。</li>
+                    <li>保障客户的投资价值，减少损失。</li>
+                    <li>专业客服协助换购流程，确保顺利无忧。</li>
+                    <li>免费回收旧设备，节省运输烦恼。</li>
+                </ul>
+            </li>
+        </ul>
+        <p><strong>特别优惠：</strong>通过 Trade-In 换购新设备，客户可享受额外折扣或免费订阅服务延长！</p>
     </div>
 </div>
 
