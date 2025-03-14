@@ -115,86 +115,149 @@
             bottom: 0;
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
         }
+        .language-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .language-container div {
+            flex: 1;
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>UK Software & Solution</h1>
-    <p>您的商业解决方案专家</p>
+    <p>您的商业解决方案专家 | Pakar Penyelesaian Perniagaan Anda</p>
 </header>
 
 <nav>
-    <a href="index.html">首页</a>
-    <a href="packages.html">产品及软件配套</a>
-    <a href="product-details.html">产品详情</a>
-    <a href="contact.html">联系我们</a>
+    <a href="index.html">首页 | Laman Utama</a>
+    <a href="packages.html">产品及软件配套 | Pakej Perisian</a>
+    <a href="product-details.html">产品详情 | Butiran Produk</a>
+    <a href="contact.html">联系我们 | Hubungi Kami</a>
 </nav>
 
 <div class="container">
     <!-- 筛选按钮 -->
     <div class="filter-buttons">
-        <button class="active" data-filter="all">全部配套</button>
-        <button data-filter="app">单一 APP 配套</button>
-        <button data-filter="device">设备配套</button>
-        <button data-filter="device-plus">设备 + 6 个月配套</button>
+        <button class="active" data-filter="all">全部配套 | Semua Pakej</button>
+        <button data-filter="app">单一 APP 配套 | Pakej APP Sahaja</button>
+        <button data-filter="device">设备配套 | Pakej Peranti</button>
+        <button data-filter="device-plus">设备 + 6 个月配套 | Pakej Peranti + 6 Bulan</button>
     </div>
 
     <!-- 配套 A：单一 APP 配套 -->
     <div class="card" data-category="app">
-        <h2>配套 A：单一 APP 配套 – 仅需 RM49/月</h2>
-        <ul>
-            <li><strong>适合对象：</strong>初创或小型企业，希望以最低成本获取专业的 POS 系统。</li>
-            <li><strong>包含内容：</strong>
+        <h2>配套 A：单一 APP 配套 – 仅需 RM49/月 | Pakej A: Pakej APP Sahaja – Hanya RM49/Bulan</h2>
+        <div class="language-container">
+            <div>
                 <ul>
-                    <li>完整的 PalmPOS 软件使用权。</li>
-                    <li>持续的软件更新和技术支持。</li>
-                    <li>教学视频，助您快速上手操作。</li>
-                    <li>马上安装，免费试用。</li>
+                    <li><strong>适合对象：</strong>初创或小型企业，希望以最低成本获取专业的 POS 系统。</li>
+                    <li><strong>包含内容：</strong>
+                        <ul>
+                            <li>完整的 PalmPOS 软件使用权。</li>
+                            <li>持续的软件更新和技术支持。</li>
+                            <li>教学视频，助您快速上手操作。</li>
+                            <li>马上安装，免费试用。</li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-        </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><strong>Sasaran：</strong>Perniagaan permulaan atau kecil yang ingin mendapatkan sistem POS profesional dengan kos terendah.</li>
+                    <li><strong>Termasuk：</strong>
+                        <ul>
+                            <li>Akses penuh kepada perisian PalmPOS.</li>
+                            <li>Kemaskini perisian dan sokongan teknikal berterusan.</li>
+                            <li>Video tutorial untuk membantu anda memulakan dengan cepat.</li>
+                            <li>Pasang sekarang, percubaan percuma.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <!-- 配套 B：设备配套 -->
     <div class="card" data-category="device">
-        <h2>配套 B：设备配套 – 仅需 RM999（赠送 60天软件免费使用）</h2>
-        <ul>
-            <li><strong>适合对象：</strong>中小型以及微型生意，例如流动小贩，商店，巴刹或摊贩等，不需要繁琐设备，低负担。</li>
-            <li><strong>包含内容：</strong>
+        <h2>配套 B：设备配套 – 仅需 RM999（赠送 60天软件免费使用） | Pakej B: Pakej Peranti – Hanya RM999（60 Hari Percuma）</h2>
+        <div class="language-container">
+            <div>
                 <ul>
-                    <li>1 台专属 PalmPOS 设备 Imin Switch 2Pro。</li>
-                    <li>免费赠送 60 天 PalmPOS 应用使用权。</li>
-                    <li>教学视频，助您无缝上手。</li>
-                    <li>免邮寄费用。</li>
-                    <li>FOC 赠送 3 卷打印纸。</li>
-                    <li>价格已包含 SST。</li>
+                    <li><strong>适合对象：</strong>中小型以及微型生意，例如流动小贩，商店，巴刹或摊贩等，不需要繁琐设备，低负担。</li>
+                    <li><strong>包含内容：</strong>
+                        <ul>
+                            <li>1 台专属 PalmPOS 设备 Imin Switch 2Pro。</li>
+                            <li>免费赠送 60 天 PalmPOS 应用使用权。</li>
+                            <li>教学视频，助您无缝上手。</li>
+                            <li>免邮寄费用。</li>
+                            <li>FOC 赠送 3 卷打印纸。</li>
+                            <li>价格已包含 SST。</li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-        </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><strong>Sasaran：</strong>Perniagaan kecil dan sederhana, seperti penjaja, kedai, pasar, atau peniaga kecil, yang tidak memerlukan peranti rumit dan beban rendah.</li>
+                    <li><strong>Termasuk：</strong>
+                        <ul>
+                            <li>1 peranti PalmPOS Imin Switch 2Pro.</li>
+                            <li>60 hari percuma penggunaan aplikasi PalmPOS.</li>
+                            <li>Video tutorial untuk membantu anda memulakan dengan lancar.</li>
+                            <li>Tiada caj penghantaran.</li>
+                            <li>Percuma 3 gulung kertas cetak.</li>
+                            <li>Harga termasuk SST.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <!-- 配套 C：设备 + 6 个月配套 -->
     <div class="card" data-category="device-plus">
-        <h2>配套 C：设备 + 6 个月配套 – 仅需 RM1388</h2>
-        <ul>
-            <li><strong>适合对象：</strong>寻求长远解决方案，节省更多的企业。</li>
-            <li><strong>包含内容：</strong>
+        <h2>配套 C：设备 + 6 个月配套 – 仅需 RM1388 | Pakej C: Pakej Peranti + 6 Bulan – Hanya RM1388</h2>
+        <div class="language-container">
+            <div>
                 <ul>
-                    <li>1 台专属 PalmPOS 设备 Imin Switch 2Pro。</li>
-                    <li>免费赠送 6 个月 PalmPOS 应用使用权。</li>
-                    <li>教学视频指导，助您快速掌握功能。</li>
-                    <li>免费邮寄服务，确保安全送达。</li>
-                    <li>FOC 赠送 3 卷打印纸。</li>
-                    <li>价格已包含 SST。</li>
+                    <li><strong>适合对象：</strong>寻求长远解决方案，节省更多的企业。</li>
+                    <li><strong>包含内容：</strong>
+                        <ul>
+                            <li>1 台专属 PalmPOS 设备 Imin Switch 2Pro。</li>
+                            <li>免费赠送 6 个月 PalmPOS 应用使用权。</li>
+                            <li>教学视频指导，助您快速掌握功能。</li>
+                            <li>免费邮寄服务，确保安全送达。</li>
+                            <li>FOC 赠送 3 卷打印纸。</li>
+                            <li>价格已包含 SST。</li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-        </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><strong>Sasaran：</strong>Perniagaan yang mencari penyelesaian jangka panjang dan menjimatkan lebih banyak.</li>
+                    <li><strong>Termasuk：</strong>
+                        <ul>
+                            <li>1 peranti PalmPOS Imin Switch 2Pro.</li>
+                            <li>6 bulan percuma penggunaan aplikasi PalmPOS.</li>
+                            <li>Video tutorial untuk membantu anda menguasai fungsi dengan cepat.</li>
+                            <li>Perkhidmatan penghantaran percuma, memastikan penghantaran selamat.</li>
+                            <li>Percuma 3 gulung kertas cetak.</li>
+                            <li>Harga termasuk SST.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
 <footer>
-    <p>&copy; 2023 UK Software & Solution. 保留所有权利。</p>
+    <p>&copy; 2023 UK Software & Solution. 保留所有权利 | Hak Cipta Terpelihara.</p>
 </footer>
 
 <script>
