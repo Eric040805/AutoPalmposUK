@@ -17,12 +17,12 @@
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 60px 0;
+            padding: 40px 0;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         header h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin: 0;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
@@ -39,10 +39,11 @@
         }
         nav a {
             color: white;
-            padding: 14px 20px;
+            padding: 10px 15px;
             text-decoration: none;
             text-align: center;
             transition: background 0.3s ease, transform 0.3s ease;
+            font-size: 0.9rem;
         }
         nav a:hover {
             background-color: #575757;
@@ -67,6 +68,8 @@
         }
         .card h2 {
             color: #4CAF50;
+            font-size: 1.8rem;
+            margin-top: 0;
         }
         .card ul {
             list-style-type: none;
@@ -75,6 +78,7 @@
         .card ul li {
             padding: 10px 0;
             border-bottom: 1px solid #eee;
+            font-size: 1rem;
         }
         .card ul li:last-child {
             border-bottom: none;
@@ -103,6 +107,7 @@
             display: flex;
             gap: 10px;
             margin-bottom: 20px;
+            flex-direction: column;
         }
         .language-container div {
             flex: 1;
@@ -115,9 +120,36 @@
             text-decoration: none;
             border-radius: 5px;
             transition: background 0.3s ease;
+            font-size: 1rem;
         }
         .download-button:hover {
             background-color: #45a049;
+        }
+
+        /* 响应式设计 */
+        @media (min-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+            header p {
+                font-size: 1.5rem;
+            }
+            nav a {
+                padding: 14px 20px;
+                font-size: 1rem;
+            }
+            .language-container {
+                flex-direction: row;
+            }
+            .card h2 {
+                font-size: 2rem;
+            }
+            .card ul li {
+                font-size: 1.1rem;
+            }
+            .download-button {
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
@@ -164,7 +196,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- 主要特点 -->
     <div class="card">
         <h2>主要功能 | Fungsi Utama</h2>
@@ -172,7 +204,7 @@
             <div>
                 <ul>
                     <li><strong>LHDN 电子发票变得方便：</strong>通过二维码轻松请求电子发票。</li>
-                    <li><strong>超过 450 个商业产品模板：</strong>涵盖各种业务类型和类别，快速启动运营。</li>
+                    <li><strong>超过 500 个商业产品模板：</strong>涵盖各种业务类型和类别，快速启动运营。</li>
                     <li><strong>支持多种支付方式：</strong>接受不同的电子钱包付款，提供多种付款选择。</li>
                     <li><strong>付款语音通知：</strong>数字付款成功后接收实时语音通知，确认更快、更轻松。</li>
                     <li><strong>电子钱包付款的自动销售捕获：</strong>自动记录电子钱包交易，无需手动输入。</li>
@@ -182,7 +214,7 @@
             <div>
                 <ul>
                     <li><strong>Invois Elektronik LHDN yang Mudah：</strong>Minta invois elektronik dengan mudah melalui kod QR.</li>
-                    <li><strong>Lebih daripada 450 Templat Produk Perniagaan：</strong>Meliputi pelbagai jenis dan kategori perniagaan, mulakan operasi dengan pantas.</li>
+                    <li><strong>Lebih daripada 500 Templat Produk Perniagaan：</strong>Meliputi pelbagai jenis dan kategori perniagaan, mulakan operasi dengan pantas.</li>
                     <li><strong>Menyokong Pelbagai Cara Pembayaran：</strong>Menerima pembayaran melalui dompet elektronik yang berbeza, menyediakan pelbagai pilihan pembayaran.</li>
                     <li><strong>Notifikasi Suara Pembayaran：</strong>Terima notifikasi suara masa nyata selepas pembayaran digital, pengesahan lebih pantas dan mudah.</li>
                     <li><strong>Pengambilan Jualan Automatik untuk Pembayaran Dompet Elektronik：</strong>Rekod transaksi dompet elektronik secara automatik, tiada input manual diperlukan.</li>
